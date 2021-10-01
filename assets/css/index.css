@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('');
+
+body{
+margin: 0px;
+font-family: 'Bebas Neue';
+background-color: rgb(252, 252, 249);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.navegacao{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color:#B4F8C8;
+    color:rgb(252, 252, 249);
+    font-size: 20px;
+    width: 25%;
+    height:100vh;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgb(97, 97, 97);
+    width: 75%;
+    margin-left: 60px;
+    margin-top: 0px; 
+    padding: 0px;
+}
+
+.foto{
+    display: flex;
+    justify-content: center; 
+    max-width: 150px; 
+    max-height: 150px;
+    border-radius: 50%;
+    border: 6px solid #d4fadf; 
+    margin-top: 35px;
+}
+
+.nome{
+    display: none;
+}
+
+.btn-menu{
+    display: none;
+}
+
+.menu ul{
+    padding: 0;
+    transform: 200ms;
+}
+
+.menu ul li {
+    display: flex;
+    justify-content: center;    
+    list-style: none;
+    margin: 10px;
+}
+
+.menu ul li a{
+    list-style: none;
+    text-decoration: none;
+    color:rgb(252, 252, 249);
+    text-shadow: #49a564 0.1em 0.1em 0.2em;
+}
+
+.menu ul li:hover {
+   color:rgb(252, 252, 249) ;
+   
+}
+.menu ul li a:hover {
+    list-style: none;
+    text-decoration: none;
+    color: #78b98b;
+    text-shadow: rgb(252, 252, 249)0.1em 0.1em 0.2em;;
+}
+
+h3{
+    font-size: 100px;
+    padding: 0px;
+    margin: 0px;
+}
+
+p{
+    margin-right: 15px;
+}
+
+.texto-colorido{
+    color: #78b98b;
+}
+
+.info{
+    font-size: 30px;
+    display: flex;
+    margin: 0px;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+.icon{
+    text-decoration: none;
+    color: #B4F8C8;
+    margin: 10px;
+    height: 60px;
+    width: 60px;
+}
+
+.icon:hover{
+    color: #78b98b;
+}
+
+

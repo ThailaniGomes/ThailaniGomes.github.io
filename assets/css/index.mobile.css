@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+
+
+/* Small devices (landscape phones, 576px and down) */
+@media (min-width: 600px) and (max-width:1200px){  
+    body{
+        margin: 0px;
+    }
+
+    .navegacao{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction:row;
+
+        width: 100%;
+        height: 120px;
+    }
+
+    .menu-desativado{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        background-color: #B4F8C8;
+        border-radius: 15px;
+        margin-top: 300px;
+        padding: 5px;
+        transform: 200ms;
+        /*display: none;*/
+    }
+
+    .foto{
+        display:none;
+    }
+
+    .conteudo{
+        display: none;
+        }
+
+    .info{
+        display: none;
+    }
+  
+    .nome{
+        display: flex;
+        font-family:'Bebas Neue';
+        text-align: start;
+        font-size: 30px;
+        color: white;
+        text-shadow: #49a564 0.1em 0.1em 0.2em;
+    }
+
+
+    .btn-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#B4F8C8;
+    font-size: 20px;
+    font-family:'Bebas Neue';
+    color: white;
+    padding: 10px;
+    width: 60px;
+    height: 50px;
+    border-radius: 15%;
+    border: solid white 2px;  
+    }
+
+    .btn-menu:hover{
+        border-radius: 15%;
+        border: solid #49a564 2px;
+        color: #49a564;
+    }
+}
+
+
