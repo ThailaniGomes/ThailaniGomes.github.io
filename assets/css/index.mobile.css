@@ -3,7 +3,7 @@
 
 
 /* Small devices (landscape phones, 576px and down) */
-@media (min-width: 600px) and (max-width:1200px){  
+@media (max-width:1200px){  
     body{
         margin: 0px;
     }
@@ -13,21 +13,14 @@
         justify-content: space-around;
         align-items: center;
         flex-direction:row;
-
         width: 100%;
-        height: 120px;
-    }
-
-    .menu-desativado{
-        display: none;
+        height: 130px;
     }
 
     .menu{
         display: flex;
         background-color: #B4F8C8;
         border-radius: 15px;
-        margin-top: 300px;
-        padding: 5px;
         transform: 200ms;
         /*display: none;*/
     }
@@ -74,6 +67,37 @@
         border: solid #49a564 2px;
         color: #49a564;
     }
+
+    .menu{
+        display: flex;
+        position: absolute;
+        top: -500px;
+        left: 0;
+        z-index: -1;
+        transition: all 0.5s ease-in-out;
+        width: 30%;
+        height: 100vh;
+        justify-content: center;
+    }
+    .menu.menu-ativado{
+        top: 110px;
+    }
 }
 
+/*.overlay{
+position: fixed;
+top: 130px;
+left: 0;
+width: 100vw;
+height: 100vh;
+background: rgba(174, 204, 183, 0.712);
+backdrop-filter: blur(1px);
+visibility: hidden;
+opacity: 0;
+z-index: -1;
+}
 
+.menu-ativado .overlay{
+    visibility: visible;
+    opacity: 1;
+}*/

@@ -1,19 +1,30 @@
-window.onload = function(){
-    document.getElementById("botao-menu").onclick = menuClick;
-}
+var $botaoMenu = document.querySelector ("#botao-menu");
+$botaoMenu.onclick = alterarMenu;
 
-function menuClick(event){
-    var menuDesativado = document.getElementsByClassName("menu-desativado")[0];
-    
-    if (menuDesativado){
-//ativa 
-        document.getElementsByClassName("menu-desativado")[0].className = "menu";
-        
-        
+function alterarMenu(){
+    var $menu = document.querySelector(".menu");
+    if(menuEstaDesativado($menu)){
+        $menu.className = "menu menu-ativado";
     }else{
-        var menuAtivado = document.getElementsByClassName("menu")[0];
-//desativa
-        document.getElementsByClassName("menu")[0].className += "menu menu-desativado";
+        $menu.className = "menu";
     }
 }
+
+function menuEstaDesativado($menu){
+    return $menu.className == "menu";   
+}
+
+
+function abrirMenu() {
+    document.querySelector(".menu-ativado").style.width = "250px";
+    document.querySelector(".conteudo").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function fecharMenu() {
+    document.querySelector(".menu").style.width = "0";
+    document.querySelector(".conteudo").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+}
+
 

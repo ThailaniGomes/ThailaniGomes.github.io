@@ -3,17 +3,16 @@
   <head>
     <title>Meu Site</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/index.mobile.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/index.mobile.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <script defer src="js/mobile.js"></script> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <div class="container">
       <div class="navegacao">
           <div class="img">
-            <img class="foto" src="img/mabel-pines.jpg" alt="">
+            <img class="foto" src="assets/img/perfil.jpg" alt="">
           </div>
             <div class="nome">
               <h2> Thailani Gomes</h2>
@@ -22,38 +21,120 @@
               <button id="botao-menu" class="btn-menu" >Menu</button>
             </div>
 
-          <div class="menu menu-desativado">
+          <div class="menu">
               <nav>
                 <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Experience</a></li>
-                    <li><a href="">Education</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Interests</a></li>
-                    <li><a href="">Awards</a></li>                         
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#awards">Awards</a></li>                         
                 </ul>
               </nav>
+              <div class="overlay"></div>
           </div>
       </div>
 
       <div class="conteudo">
-          <h3>Thailani <span class="texto-colorido">Gomes</span></h3>
-          <div class="info">
-            <p>Niteroi</p>
-            <p>Estudante de front-end</p>
-            <p class="texto-colorido">thailani.gomfer@gmail.com</p>
-          </div>
-          <div>
-            <p>Oiê!Tubo bem? Eu sou uma pessoa muito legal</p>
-          </div>
-          <div class="icones">
-            <span><a href="https://www.linkedin.com/in/thailanigomes/"target="blank"><ion-icon class="icon" name="logo-linkedin"></ion-icon></a></span>
-            <span><a href="https://github.com/ThailaniGomes"target="blank"><ion-icon class="icon" name="logo-github"></ion-icon></a></span>
-            <span><a href="https://www.instagram.com/thailanigomes/?hl=pt-br" target="blank"><ion-icon class="icon" name="logo-instagram"></ion-icon></a></span>
-            <span><a href="https://www.facebook.com/thailani.gomes" target="blank"><ion-icon class="icon" name="logo-facebook"></ion-icon></a></span>
-          </div>
+          <section id="about">
+            <h3>Thailani <span class="texto-colorido">Gomes</span></h3>
+            <div class="info">
+              <p>Niterói</p>
+              <p>Estudante de front-end</p>
+              <p class="texto-colorido">thailani.gomfer@gmail.com</p>
+            </div>
+            <div>
+              <p>Oiê!Tudo bem?</p>
+              <p>Meus pronomes são ela e dela.</p>
+              <p> Extrovertida, criativa...</p>
+              <p>Após 9 anos como profissional autônoma, atuando na área da beleza, tomei a decisão de procurar novos desafios e migrar para área de tecnologia.</p>
+              
+            </div>
+            <div class="icones">
+              <span><a href="https://www.linkedin.com/in/thailanigomes/"target="blank"><ion-icon class="icon" name="logo-linkedin"></ion-icon></a></span>
+              <span><a href="https://github.com/ThailaniGomes"target="blank"><ion-icon class="icon" name="logo-github"></ion-icon></a></span>
+              <span><a href="https://www.instagram.com/thailanigomes/?hl=pt-br" target="blank"><ion-icon class="icon" name="logo-instagram"></ion-icon></a></span>
+              <span><a href="https://www.facebook.com/thailani.gomes" target="blank"><ion-icon class="icon" name="logo-facebook"></ion-icon></a></span>
+            </div>
+          </section>
+
+          <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience">
+              <img class="img-gif" src="https://c.tenor.com/9ud1r4sc-QQAAAAC/confused-john-travolta.gif" alt="">
+            </div>
+          </section>
+
+          <section id="education">
+            <h2>Education</h2>
+            <div class="educacao">
+              <div class="instituicao">
+                <P class="instituicao-nome">Forsoft Academy</P>
+                <p class="instituicao-curso">Fullstack|2021</p>
+                <p class="instituicao-descricao">Criamos um projeto que tem como objetivo ser uma carteira internacional digital de vacinação.</p>
+                <ul>
+                  <li>Especificação de software (UML) </li>
+                  <li>Criação de Wireframes</li>
+                  <li>Desenvolvimento de software. </li>
+                  <li>Líder de Equipe</li>
+                </ul>
+              </div>
+
+              <!--<div class="instituicao">
+                <P class="instituicao-nome">Forsoft Academy</P>
+                <p class="instituicao-curso">Fullstack|2021</p>
+                <p class="instituicao-descricao">Criamos um projeto que tem como objetivo ser uma carteira digital de vacinação.</p>
+                <ul>
+                  <li>Especificação de software (UML) </li>
+                  <li>Criação de Wireframes</li>
+                  <li>Desenvolvimento de software. </li>
+                  <li>Líder de Equipe</li>
+                </ul>
+              </div>-->
+            </div>
+
+          </section>
+
+          <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+              <div class="hard">
+                <span><ion-icon class="icon-skills" name="logo-html5"></ion-icon>HTML</span>
+                <span><ion-icon class="icon-skills" name="logo-css3"></ion-icon>CSS</span>
+                <span><ion-icon class="icon-skills" name="logo-javascript"></ion-icon>Java Script</span>
+              </div>
+
+              <div class="solft">
+                <ul>
+                  <li>Proativa</li>
+                  <li>Comunicativa</li>
+                  <li>Hábil à trabalhar em equipe</li>
+                </ul>
+              </div>
+            </div>
+
+          </section>
+
+          <section id="interests">
+            <h2>Interests</h2>
+            <div>
+              <ul>
+                <li>Cozinhar</li>
+                  <p>Comida é amor!</p>
+                <li>Plantinhas</li>
+                  <p></p>
+              </ul>
+            </div>
+          </section>
+
+          <section id="awards">
+            <h2>Awards</h2>
+            <p></p>
+          </section>
       </div>
   </div> 
+  <script src="assets/js/mobile.js"></script> 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
